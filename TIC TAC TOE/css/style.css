@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color:brown;
+    color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 40px;
+    color: azure;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase
+}
+.container{
+   display: grid;
+   grid-template-columns: repeat(3,auto);
+    
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 2px solid yellow;
+    box-shadow: 0 0 0 2px yellow;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    font-size: 25px;
+}
+
+#status{
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#restart{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    color: brown;
+    background-color: yellow;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+ 
+#restart:hover{
+    background-color: azure;
+}
+
+img{
+    width: 85px;
+}
+.win{
+    animation: winAnimation ease-in-out 1s infinite ;
+}
+
+@keyframes winAnimation{
+    0%{background-color: yellow;}
+    100%{background-color: blue;}
+}
